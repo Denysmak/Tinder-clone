@@ -2,7 +2,7 @@ let principal = document.getElementById("principal");
 let explora = document.getElementById("explora")
 let curtida = document.getElementById("curtida");
 let mensagem = document.getElementById("mensagem")
-
+let headerToImage = document.getElementById("headerToImage")
 var fire = document.getElementById("fire");
 let lupa = document.getElementById("lupa");
 let diamond = document.getElementById("diamond");
@@ -38,13 +38,13 @@ let left = document.getElementById("left");
 
 right.addEventListener("click", function(){
 increment()
-tinderGirl.src = `./assets/tinderGirl1-${counter}.jpg`
+tinderGirl.src = `./assets/tinderGirl1-${counter}.webp`
 })
 
 left.addEventListener("click", function(){
 
 decrement();
-    tinderGirl.src = `./assets/tinderGirl1-${counter}.jpg`
+    tinderGirl.src = `./assets/tinderGirl1-${counter}.webp`
 })
 
 
@@ -58,7 +58,7 @@ principal.style.display = "none"
 explora.style.display = "flex"
 curtida.style.display = "none"
 mensagem.style.display = "none"
-
+    headerToImage.style.backgroundImage = "linear-gradient(white,rgb(223, 223, 223))"
 e.parentElement.children[0].style.color = "black"
 e.style.color = "rgb(235, 135, 135)"
 e.parentElement.children[2].style.color = "black"
@@ -70,7 +70,7 @@ principal.style.display = "flex"
 explora.style.display = "none"
 curtida.style.display = "none"
 mensagem.style.display = "none"
-
+    headerToImage.style.backgroundImage = "linear-gradient(white,rgb(223, 223, 223))"
     e.style.color = "rgb(235, 135, 135)"
     e.parentElement.children[1].style.color = "black"
     e.parentElement.children[2].style.color = "black"
@@ -78,6 +78,7 @@ mensagem.style.display = "none"
 }
 function changeToCurtida(e) {
 principal.style.display = "none"
+    headerToImage.style.backgroundImage = "linear-gradient(white,rgb(223, 223, 223))"
 explora.style.display = "none"
 curtida.style.display = "flex"
 mensagem.style.display = "none"
@@ -96,7 +97,7 @@ principal.style.display = "none"
 explora.style.display = "none"
 curtida.style.display = "none"
 mensagem.style.display = "flex"
-
+headerToImage.style.backgroundImage = "linear-gradient(white,white)"
 
     e.parentElement.children[0].style.color = "black"
     e.parentElement.children[1].style.color = "black"

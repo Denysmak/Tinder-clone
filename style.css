@@ -22,7 +22,7 @@ background-color: black;
 main{
 height: 720px;
 width: 360px;
-border: 3px solid black;
+overflow: hidden;
 
 
 
@@ -51,7 +51,7 @@ position:relative;
 .profilePic{
 width: 35px;
 height: 35px;
-background-image: url(./assets/pexels-wesley-carvalho-9225859.jpg);
+background-image: url(./assets/perfil.webp);
 background-position: center;
 background-size: cover;
 border-radius: 50%;
@@ -87,7 +87,7 @@ color: rgb(235, 135, 135);
 width: 97%;
 margin: auto;
 height: calc(89% + 8px);
-background-image: url(./assets/pexels-tolga-aslantürk-10955884.jpg);
+
 background-size: cover;
 border-radius: 7px;
 display: flex;
@@ -99,7 +99,7 @@ position: relative;}
 display: flex;
 justify-content: center;
 overflow: hidden;
-background-color: red;
+
 position: absolute;
 height: 100%;
 width: 100%;
@@ -386,11 +386,10 @@ border-radius: 8px;
 }
 
 .wideCard{
-background-image: url(./assets/coffee.jpg);
+background-image: url(./assets/coffee.webp);
 background-size: cover;
 height: 28.5%;
 width: 96%;
-background-color: red;
 border-radius: 8px;
 box-sizing: border-box;
 display: flex;
@@ -443,7 +442,7 @@ left: 15%;
 /* CARD1 */
 
 #card1{
-background-image: url(./assets/party.jpg);
+background-image: url(./assets/party.webp);
 background-size: cover;
 position: relative;
 display: flex;
@@ -477,7 +476,7 @@ margin-top: -2%;
 
 display: flex;
 justify-content: center;
-background-image: url(./assets/heart.jpg);
+background-image: url(./assets/heart.webp);
     background-size: cover;
     padding-bottom: 5px;
 }
@@ -510,7 +509,7 @@ margin-top:-2%;
 
 display: flex;
 justify-content: center;
-background-image: url(./assets/party2.jpg);
+background-image: url(./assets/party2.webp);
     background-size: cover;
     padding-bottom: 5px;
 }
@@ -547,7 +546,7 @@ margin-top: -2%;
 
     display: flex;
     justify-content: center;
-    background-image: url(./assets/friends.jpg);
+    background-image: url(./assets/friends.webp);
     background-size: cover;
     padding-bottom: 5px;
 }
@@ -574,8 +573,8 @@ margin-top: -2%;
     z-index: 1;
 }
 
-.card4-container-text h3 {
-}
+
+
 .card4-container-text h4 {
 margin-top: -2%;
 }
@@ -670,7 +669,7 @@ margin-top: 10px;
 
 
 #card1-1 {
-    background-image: url(./assets/vaccine.jpg);
+    background-image: url(./assets/vaccine.webp);
     background-size: cover;
     position: relative;
     display: flex;
@@ -712,20 +711,20 @@ line-height: 20px;
 
 
 #card2-1 {
-    background-image: url(./assets/happyHour.jpg);
+    background-image: url(./assets/happyHour.webp);
     background-size: cover;
 }
 
 
 
 #card3-1 {
-    background-image: url(./assets/serie.jpg);
+    background-image: url(./assets/serie.webp);
     background-size: cover;
 }
 
 
  #card4-1 {
-    background-image: url(./assets/games.jpg);
+    background-image: url(./assets/games.webp);
     background-size: cover;
 }
 
@@ -733,49 +732,49 @@ line-height: 20px;
 
 
 #card5-1 {
-    background-image: url(./assets/causasSociais.jpg);
+    background-image: url(./assets/causasSociais.webp);
     background-size: cover;
 }
 #card6-1 {
-    background-image: url(./assets/criativo.jpg);
+    background-image: url(./assets/criativo.webp);
     background-size: cover;
 }
 
 
 #card7-1 {
-    background-image: url(./assets/comida.jpg);
+    background-image: url(./assets/comida.webp);
     background-size: cover;
 }
 
 #card8-1 {
-    background-image: url(./assets/musica.jpg);
+    background-image: url(./assets/musica.webp);
     background-size: cover;
 }
 
 #card9-1 {
-    background-image: url(./assets/natureza.jpg);
+    background-image: url(./assets/natureza.webp);
     background-size: cover;
 }
 
 #card10-1 {
-    background-image: url(./assets/esporte.jpg);
+    background-image: url(./assets/esporte.webp);
     background-size: cover;
 }
 
 #card11-1 {
-    background-image: url(./assets/balada.jpg);
+    background-image: url(./assets/balada.webp);
     background-size: cover;
 }
 #card12-1 {
-    background-image: url(./assets/aventura.jpg);
+    background-image: url(./assets/aventura.webp);
     background-size: cover;
 }
 #card13-1 {
-    background-image: url(./assets/estrada.jpg);
+    background-image: url(./assets/estrada.webp);
     background-size: cover;
 }
 #card14-1 {
-    background-image: url(./assets/autoCuidado.jpg);
+    background-image: url(./assets/autoCuidado.webp);
     background-size: cover;
 }
 
@@ -876,104 +875,104 @@ filter: blur(8px);
 }
 
 #card1-2 {
-background-image: url(./assets/girl1.jpg);
+background-image: url(./assets/girl1.webp);
 background-size: cover;
 overflow: hidden;
 
 }
 #card1-2  .girl-curtida{
-background-image: url(./assets/girl1.jpg);
+background-image: url(./assets/girl1.webp);
 }
 
 
 #card2-2 {
-    background-image: url(./assets/girl2.jpg);
+    background-image: url(./assets/girl2.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card2-2 .girl-curtida {
-    background-image: url(./assets/girl2.jpg);
+    background-image: url(./assets/girl2.webp);
 }
 
 
 
 #card3-2 {
-    background-image: url(./assets/girl3.jpg);
+    background-image: url(./assets/girl3.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card3-2 .girl-curtida {
-    background-image: url(./assets/girl3.jpg);
+    background-image: url(./assets/girl3.webp);
 }
 
 #card4-2 {
-    background-image: url(./assets/girl4.jpg);
+    background-image: url(./assets/girl4.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card4-2 .girl-curtida {
-    background-image: url(./assets/girl4.jpg);
+    background-image: url(./assets/girl4.webp);
 }
 
 #card5-2 {
-    background-image: url(./assets/girl5.jpg);
+    background-image: url(./assets/girl5.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card5-2 .girl-curtida {
-    background-image: url(./assets/girl5.jpg);
+    background-image: url(./assets/girl5.webp);
 }
 
 #card6-2 {
-    background-image: url(./assets/girl6.jpg);
+    background-image: url(./assets/girl6.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card6-2 .girl-curtida {
-    background-image: url(./assets/girl6.jpg);
+    background-image: url(./assets/girl6.webp);
 }
 #card7-2 {
-    background-image: url(./assets/girl7.jpg);
+    background-image: url(./assets/girl7.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card7-2 .girl-curtida {
-    background-image: url(./assets/girl7.jpg);
+    background-image: url(./assets/girl7.webp);
 }
 
 #card8-2 {
-    background-image: url(./assets/girl8.jpg);
+    background-image: url(./assets/girl8.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card8-2 .girl-curtida {
-    background-image: url(./assets/girl8.jpg);
+    background-image: url(./assets/girl8.webp);
 }
 
 #card9-2 {
-    background-image: url(./assets/girl9.jpg);
+    background-image: url(./assets/girl9.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card9-2 .girl-curtida {
-    background-image: url(./assets/girl9.jpg);
+    background-image: url(./assets/girl9.webp);
 }
 #card10-2 {
-    background-image: url(./assets/girl10.jpg);
+    background-image: url(./assets/girl10.webp);
     background-size: cover;
     overflow: hidden;
 }
 
 #card10-2 .girl-curtida {
-    background-image: url(./assets/girl10.jpg);
+    background-image: url(./assets/girl10.webp);
 }
 .quemCurtiu{
 
@@ -984,7 +983,7 @@ font-weight: 700;
 border-radius: 18px;
 padding: 5px 10px;
 -webkit-text-stroke: 0.3px white;
-top: 76.5%;
+top: 78.5%;
 }
 /* END CURTIDAS */
 
@@ -1016,7 +1015,6 @@ top: 76.5%;
 margin-top: 10px;    
 height: 30px;
 width: 95%;
-/* border: 1px solid black; */
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -1072,39 +1070,54 @@ height:70px;
 width: 70px;
 }
 #chatGirl1{
-background-image: url(./assets/chatGirl1.jpg);
+background-image: url(./assets/chatGirl1.webp);
+border-top: 1px solid rgb(235, 234, 234);
 }
 #chatGirl2 {
-    background-image: url(./assets/chatGirl2.jpg);
+    background-image: url(./assets/chatGirl2.webp);
 }
 #chatGirl3 {
-    background-image: url(./assets/chatGirl3.jpg);
+    background-image: url(./assets/chatGirl3.webp);
 }
 #chatGirl4 {
-    background-image: url(./assets/chatGirl4.jpg);
+    background-image: url(./assets/chatGirl4.webp);
 }
 #chatGirl5 {
-    background-image: url(./assets/chatGirl5.jpg);
+    background-image: url(./assets/chatGirl5.webp);
 }
 #chatGirl6 {
-    background-image: url(./assets/chatGirl6.jpg);
+    background-image: url(./assets/chatGirl6.webp);
 }
 #chatGirl7 {
-    background-image: url(./assets/chatGirl7.jpg);
+    background-image: url(./assets/chatGirl7.webp);
 }
 #chatGirl8 {
-    background-image: url(./assets/chatGirl8.jpg);
+    background-image: url(./assets/chatGirl8.webp);
 }
+.firstGirl{
 
+border-top: 1px solid rgb(235, 234, 234)!important;
+
+}
 .chatGirlName{
 
 height: 100%;
 width: 78%;
-border-top: 1px solid rgb(235, 234, 234);
+/* border-top: 1px solid rgb(235, 234, 234); */
 border-bottom: 1px solid rgb(235, 234, 234);
 display: flex;
 flex-direction: column;
 justify-content: center;
+}
+.chatGirlFirst {
+
+    height: 100%;
+    width: 78%;
+    border-top: 1px solid rgb(235, 234, 234);
+    border-bottom: 1px solid rgb(235, 234, 234);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .name-verified{
 display: flex;
