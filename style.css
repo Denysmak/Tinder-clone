@@ -23,7 +23,7 @@ main{
 height: 720px;
 width: 360px;
 overflow: hidden;
-
+position: relative;
 
 
 }
@@ -234,6 +234,11 @@ height: 60px;
 width: 90%;
 z-index: 1;
 }
+.fa-circle-xmark{
+
+color:red ;
+font-size: 50px;
+}
 .arrow{
 display: inline-block;
 border: 1px solid white;
@@ -244,9 +249,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.cancel{
-width: 50px;
-}
+
 .star{
 
 color:rgb(39, 148, 237);
@@ -261,10 +264,10 @@ border-radius: 50%;
 color: rgb(5, 255, 176);
 border: 4px solid rgb(5, 255, 176) ;
 
-padding-top: 5px;
+padding-top: 3px;
 padding-bottom: 2px;
-padding-left: 10px;
-padding-right: 10px;
+padding-left: 8px;
+padding-right: 8px;
 border-radius: 50%;
 font-size: 25px;
 }
@@ -983,7 +986,7 @@ font-weight: 700;
 border-radius: 18px;
 padding: 5px 10px;
 -webkit-text-stroke: 0.3px white;
-top: 78.5%;
+top: 76%;
 }
 /* END CURTIDAS */
 
