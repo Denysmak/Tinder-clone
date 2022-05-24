@@ -263,8 +263,10 @@ border-radius: 50%;
 .heart{
 color: rgb(5, 255, 176);
 border: 4px solid rgb(5, 255, 176) ;
-
-padding-top: 3px;
+box-sizing: border-box;
+height: 50px;
+width: 50px;
+padding-top: 4px;
 padding-bottom: 2px;
 padding-left: 8px;
 padding-right: 8px;

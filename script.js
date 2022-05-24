@@ -12,13 +12,13 @@ let tinderGirl = document.getElementById("tinderGirl");
 
 var counter = 1;
 function increment() {
-    if(counter < 4){
+    if(counter < 3){
     counter++;
     console.log(counter);
     }
     else{
 
-        counter = 4
+        counter = 3
     }
 }
 function decrement(){
