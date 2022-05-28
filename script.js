@@ -22,11 +22,11 @@ let right = document.getElementById("right");
 let left = document.getElementById("left");
 right.addEventListener("click", function(){
 increment()
-tinderGirl.src = `./assets/tinderGirl1-${counter}.webp`
+tinderGirl.src = `./assets/teste/tinderGirl1-${counter}.webp`
 })
 left.addEventListener("click", function(){
 decrement();
-    tinderGirl.src = `./assets/tinderGirl1-${counter}.webp`
+    tinderGirl.src = `./assets/teste/tinderGirl1-${counter}.webp`
 })
 window.onload = fire.style.color = "rgb(235, 135, 135"
 function changeToExplorar(e){
