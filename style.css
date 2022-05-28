@@ -954,4 +954,17 @@ main {
         height: 100%;
         width: 100%;
         border: none;
-}}
+}
+
+.quemCurtiu {
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(178, 152, 3);
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 8px 10px;
+    -webkit-text-stroke: 0.3px white;
+    top: 82%;
+}
+
+}
