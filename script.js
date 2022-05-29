@@ -12,7 +12,38 @@ let tags = document.getElementById("tags");
 let tags2 = document.getElementById("tags2");
 let tags3 = document.getElementById("tags3");
 let online = document.getElementById("online");
-let information = document.getElementById("information")
+let information = document.getElementById("information");
+let dozemeses = document.getElementById("dozemeses");
+let seismeses = document.getElementById("seismeses");
+let ummes = document.getElementById("ummes");
+
+function clickMesesDoze(e){
+e.style.border = "2px solid red"
+e.style.backgroundColor = "white"
+seismeses.style.backgroundColor = "rgb(226, 226, 226)"
+seismeses.style.border = "none"
+ummes.style.backgroundColor = "rgb(226, 226, 226)"
+ummes.style.border = "none"
+}
+function clickMesesSeis(e) {
+e.style.border = "2px solid red"
+e.style.backgroundColor = "white"
+    dozemeses.style.backgroundColor = "rgb(226, 226, 226)"
+    dozemeses.style.border = "none"
+    ummes.style.backgroundColor = "rgb(226, 226, 226)"
+    ummes.style.border = "none"
+}
+function clickMesesUm(e) {
+e.style.border = "2px solid red"
+e.style.backgroundColor = "white"
+    seismeses.style.backgroundColor = "rgb(226, 226, 226)"
+    seismeses.style.border = "none"
+    dozemeses.style.backgroundColor = "rgb(226, 226, 226)"
+    dozemeses.style.border = "none"
+}
+
+
+
 
 var counter = 1;
 function increment() {

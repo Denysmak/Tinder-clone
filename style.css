@@ -20,6 +20,223 @@ width: 360px;
 overflow: hidden;
 position: relative;
 }
+.plus{
+position: absolute;
+height: 100%;
+width: 100%;
+background-color: rgba(3, 3, 3, 0.9);
+z-index: 3;
+padding-top: 3%;
+display: flex;
+justify-content: center;
+}
+.fa-xmark{
+position: absolute;
+left: 0.5%;
+top:0.5%
+}
+.maisPopular{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 28%;
+height: 8%;
+border-radius: 12px;
+background-image: linear-gradient(to right, rgb(243, 70, 96), rgb(228, 124, 124));
+-webkit-text-stroke: 0.2px white;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.maisPopular h4{
+
+text-align: center;
+line-height: 15px;
+}
+.mainPlus{
+border-radius: 10px;
+border: 1px solid white;
+overflow: hidden;
+height: 80%;
+width: 92%;
+display: flex;
+flex-direction: column;
+position: relative;
+
+}
+
+.assine{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image: linear-gradient( rgb(235, 119, 31) , rgba(241, 158, 67, 1) ); 
+/* flex-grow: 1; */
+height: 50%;
+-webkit-text-stroke: 0.2px white;
+color: black;
+
+}
+.assine h1{
+font-size: 1.8rem;
+}
+.assineTinder{
+width: 95%;
+display: flex;
+margin-top: 12px;
+}
+.r{
+height: 15px;
+width: 15px;
+border-radius: 50%;
+border: 1px solid black;
+outline: 0.5px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 10px;
+}
+.fa-r{
+-webkit-text-stroke: 2px white;
+}
+.assineArrow{
+
+background-color: white;
+height: 80px;
+width: 80px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+/* box-shadow: 0px 10px 3px rgb(255, 132, 0); */
+}
+.assineArrow .fa-arrow-rotate-left{
+
+color: rgb(255, 170, 0);
+font-size: 40px;
+}
+.assine small{
+margin-top: 15%;
+font-weight: 900;
+-webkit-text-stroke: 0.1px white;
+}
+.assine p{
+margin-top: 8px;
+font-weight: 500;
+
+}
+.mensalidades{
+
+background-color: white;
+/* flex-grow: 1; */
+height: 50%;
+display: flex;
+flex-direction: column;
+
+}
+.meses{
+height: 65%;
+background-color: rgb(226, 226, 226);
+display: flex;
+}
+.dozemeses{
+width: 33.33%;
+height: 100%;
+-webkit-text-stroke: 1px black;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+}
+.dozemeses h1 {
+
+    margin-top: 15%;
+
+}
+.dozemeses h4{
+
+margin-top: -5%;
+
+}
+.dozemeses h5{
+
+font-size: 0.9rem;
+margin-top: 10%;
+}
+
+
+.seismeses {
+    width: 33.33%;
+    height: 100%;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.seismeses h1 {
+
+    margin-top: 15%;
+
+}
+
+.seismeses h4 {
+
+    margin-top: -5%;
+
+}
+
+.seismeses h5 {
+
+    font-size: 0.9rem;
+    margin-top: 10%;
+}
+
+.ummes {
+    width: 33.33%;
+    height: 100%;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ummes h1 {
+
+    margin-top: 15%;
+
+}
+
+.ummes h4 {
+
+    margin-top: -5%;
+
+}
+
+.ummes h5 {
+
+    font-size: 0.9rem;
+    margin-top: 10%;
+}
+.continuarButtonContainer{
+width: 100%;
+flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+} 
+.continuarButton{
+
+color: white;
+-webkit-text-stroke: 1.5px black;
+background-image: linear-gradient(to right, rgb(249, 105, 126), rgb(228, 124, 124));
+padding: 5px 40px;    
+border-radius: 40px;
+}
 .headerToImage{
 height: 93%;
 background-image: linear-gradient(white,rgb(223, 223, 223));
@@ -94,9 +311,11 @@ width: 120%;
 }
 #left{
 flex-grow: 1;
+
 }
 #right {
 flex-grow: 1;
+
 }
 .information{
 z-index: 1;
@@ -283,6 +502,18 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+.arrow:hover{
+    display: inline-block;
+    border: 1px solid orange;
+    color: orange;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .star{
 color:rgb(39, 148, 237);
 border: 1px solid rgb(39, 148, 237);
