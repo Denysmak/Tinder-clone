@@ -27,13 +27,19 @@ width: 100%;
 background-color: rgba(3, 3, 3, 0.9);
 z-index: 3;
 padding-top: 3%;
-display: flex;
+display: none;
 justify-content: center;
 }
 .fa-xmark{
 position: absolute;
 left: 0.5%;
-top:0.5%
+top:0.5%;
+z-index: 6;
+}
+.fa-xmark:hover{
+
+color: orangered;
+
 }
 .maisPopular{
 

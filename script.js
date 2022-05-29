@@ -16,6 +16,20 @@ let information = document.getElementById("information");
 let dozemeses = document.getElementById("dozemeses");
 let seismeses = document.getElementById("seismeses");
 let ummes = document.getElementById("ummes");
+let plus = document.getElementById("plus");
+let arrow = document.getElementById("arrow");
+let X = document.getElementById("X");
+
+X.addEventListener("click", function(){
+
+    plus.style.display = "none"
+
+})
+
+arrow.addEventListener("click", function(){
+plus.style.display = "flex"
+})
+
 
 function clickMesesDoze(e){
 e.style.border = "2px solid red"
@@ -121,7 +135,8 @@ decrement();
     }
 
 })
-window.onload = fire.style.color = "rgb(235, 135, 135"
+window.onload = fire.style.color = "rgb(235, 135, 135";
+
 
 
 
