@@ -28,6 +28,8 @@ X.addEventListener("click", function(){
 
 arrow.addEventListener("click", function(){
 plus.style.display = "flex"
+    seismeses.style.border = "2px solid red"
+    seismeses.style.backgroundColor = "white"
 })
 
 
