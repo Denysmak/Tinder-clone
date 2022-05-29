@@ -101,6 +101,8 @@ flex-grow: 1;
 .information{
 z-index: 1;
 height: 40%;
+/* height: 30%; */
+/* height: 18%; */
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -175,8 +177,57 @@ display: flex;
 align-content: flex-start;
 flex-wrap: wrap;
 }
+.tags2{
+width: 95%;
+margin-top: 20%;
+height: fit-content;
+display: none;
+
+align-content: flex-start;
+flex-wrap: wrap;
+}
+.tags3 {
+    width: 95%;
+    margin-top: 0%;
+    height: fit-content;
+    display: none;
+
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.mora{
+
+display: flex;
+font-weight: 100;
+width: 70%;
+}
+.mora h4{
+
+font-weight: 600;
+margin-left: 10%;
+
+}
+.fa-house{
+font-size: 15px;
+}
+.fa-location-dot{
+
+font-size: 20px;
+
+}
+.distancia{
+
+display: flex;
+width: 70%;
+}
+.distancia h4 {
+
+    font-weight: 600;
+    margin-left: 10%;
+
+}
 .tag{
-background-color: rgba(60, 60, 60, 0.5);
+background-color: rgba(60, 60, 60, 0.8);
 display: inline-block;
 padding: 3px 10px;
 border-radius: 20px;
@@ -184,6 +235,28 @@ margin-right: 10px;
 margin-top: 8px;
 -webkit-text-stroke: 0.5px black;
 font-size: 20px;
+}
+.tag2 {
+    background-color: rgba(61, 61, 61, 0.8);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 8px;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 20px;
+    
+}
+.tag2 h4{
+font-size: 1.2rem;
+margin-left: 5px;
+}
+.fa-paw{
+
+font-size: 20px;
+
 }
 .tag h3{
 font-size: 1.3rem;
