@@ -1276,5 +1276,21 @@ main {
     -webkit-text-stroke: 0.3px white;
     top: 82%;
 }
+#X{
+position: absolute;
+left: 50%;
+top: 85%;
+transform: translate(-50%,50%);
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 30px;
+width: 30px;
+font-size: 50px;
+}
+
+
+
 
 }
