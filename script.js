@@ -28,6 +28,7 @@ let price3 = document.getElementById("price3");
 let Xtwo = document.getElementById("Xtwo");
 let boltButton = document.getElementById("boltButton")
 let bolt = document.getElementsByClassName("bolt")[0];
+let NO = document.getElementById("NO")
 
 bolt.addEventListener("mouseover", function(){
 this.children[0].style.fontSize = "30px"
@@ -48,6 +49,15 @@ Xtwo.addEventListener("click", function(){
     boltButton.style.display = "none"
 
 })
+
+
+NO.addEventListener("click", function () {
+
+    boltButton.style.display = "none"
+
+})
+
+
 
 
 
