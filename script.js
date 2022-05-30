@@ -28,7 +28,20 @@ let price3 = document.getElementById("price3");
 let Xtwo = document.getElementById("Xtwo");
 let boltButton = document.getElementById("boltButton")
 let bolt = document.getElementsByClassName("bolt")[0];
-let NO = document.getElementById("NO")
+let NO = document.getElementById("NO");
+let nope = document.getElementsByClassName("nope")[0];
+
+
+nope.addEventListener("mouseover", function(){
+  this.children[0].style.height = "40px"
+})
+
+nope.addEventListener("mouseout", function () {
+    this.children[0].style.height = "30px"
+})
+
+
+
 
 bolt.addEventListener("mouseover", function(){
 this.children[0].style.fontSize = "30px"
