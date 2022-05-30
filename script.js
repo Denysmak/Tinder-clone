@@ -19,6 +19,97 @@ let ummes = document.getElementById("ummes");
 let plus = document.getElementById("plus");
 let arrow = document.getElementById("arrow");
 let X = document.getElementById("X");
+let one = document.getElementById("one");
+let five = document.getElementById("five");
+let ten = document.getElementById("ten");
+let price1 = document.getElementById("price1")
+let price2 = document.getElementById("price2");
+let price3 = document.getElementById("price3");
+let Xtwo = document.getElementById("Xtwo");
+let boltButton = document.getElementById("boltButton")
+let bolt = document.getElementsByClassName("bolt")[0];
+
+bolt.addEventListener("mouseover", function(){
+this.children[0].style.fontSize = "30px"
+})
+bolt.addEventListener("mouseout", function () {
+    this.children[0].style.fontSize = "20px"
+})
+
+bolt.addEventListener("click", function(){
+
+boltButton.style.display = "inline"
+
+
+})
+
+Xtwo.addEventListener("click", function(){
+
+    boltButton.style.display = "none"
+
+})
+
+
+
+
+function blueClickOne(e){
+ price1.style.height = "34%";
+ price1.style.backgroundColor = "rgb(95, 95, 184)"
+ e.children[0].children[0].style.color = "rgb(53, 190, 53)";
+ e.style.borderLeft = "0.5px solid black";
+ e.style.borderRight = "0.5px solid black";
+ five.style.border = "none";
+ ten.style.border = "none";
+ price2.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+ price2.style.backgroundColor = "white"
+ price3.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+ price3.style.backgroundColor = "white";
+ price2.style.height = "34%";
+ price3.style.height = "34%";
+ price3.children[1].style.color = "black"
+    price2.children[1].style.color = "black";
+}
+
+
+function blueClickTwo(e){
+  e.style.borderLeft = "0.5px solid black";
+  e.style.borderRight = "0.5px solid black";
+  one.style.border = "none";
+  ten.style.border = "none";
+  one.children[0].style.backgroundColor = "white";
+  one.children[0].style.height = "11.5%";
+  one.children[0].children[0].style.color = "black";
+  price2.style.height = "55%";
+  price3.style.height = "34%";
+  price2.style.backgroundColor = "rgb(95, 95, 184)";
+  price2.children[0].style.backgroundColor = "rgb(95, 95, 184)"
+  price3.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+  price3.style.backgroundColor = "white";
+  price2.children[1].style.color = "rgb(53, 190, 53)"
+  price3.children[1].style.color = "black"
+}
+
+function blueClickThree(e) {
+    e.style.borderLeft = "0.5px solid black";
+    e.style.borderRight = "0.5px solid black";
+    one.style.border = "none";
+    five.style.border = "none";
+    one.children[0].style.backgroundColor = "white";
+    one.children[0].style.height = "11.5%";
+    one.children[0].children[0].style.color = "black";
+    price2.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+    price3.style.height = "55%";
+    price2.style.height = "34%";
+    price2.style.backgroundColor = "white";
+    price3.style.backgroundColor = "rgb(95, 95, 184)";
+    price3.children[0].style.backgroundColor = "rgb(95, 95, 184)";
+    price3.children[1].style.color = "rgb(53, 190, 53)";
+    price2.children[1].style.color = "black";
+}
+
+
+
+
 
 X.addEventListener("click", function(){
 

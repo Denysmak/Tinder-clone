@@ -20,6 +20,212 @@ width: 360px;
 overflow: hidden;
 position: relative;
 }
+.boltButton{
+
+position: absolute;
+height: 100%;
+width: 100%;
+background-color: white;
+z-index: 3;
+display: none;
+}
+.boltPurple{
+
+height: 12%;
+background-image: linear-gradient(rgb(101, 4, 181),rgb(215, 77, 215));
+}
+.boltWhite{
+background-image: linear-gradient(rgb(215, 77, 215), white);
+height: 8%;
+}
+#price1{
+
+border-top: 0.5px solid rgb(164, 164, 164)
+
+}
+.boltText{
+position: absolute;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+color: black;
+}
+.boltAndFila{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: fit-content;
+justify-items: center;
+}
+.boltAndFila small{
+margin-top: 10px;
+text-align: center;
+}
+.boltAndFila h3{
+margin-top: 20px;
+font-weight: 500;
+}
+.boltAndBoosts{
+margin-top: 80px;
+height: 220px;
+width: 97%;
+display: flex;
+}
+.boltAndBoosts h1{
+
+font-weight: 400;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.oneboost{
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+width: 33.33%;
+}
+.economize{
+
+color: white;
+background-color: rgb(141, 192, 192);
+}
+.price{
+
+width: 100%;
+text-align: center;
+}
+#economizefive{
+
+    background-color: rgb(95, 95, 184);
+
+}
+#price2{
+
+background-color: rgb(95, 95, 184);
+height: 55%;
+}
+.price .percentage{
+font-weight: 600;
+}
+.fiveboost {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 33.33%;
+    
+}
+#smallfive{
+
+color: rgb(53, 190, 53);
+
+}
+#five{
+
+border-left: 0.5px solid black;
+border-right: 0.5px solid black;
+ 
+
+}
+.tenboost {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 33.33%;
+    
+}
+small span{
+  font-weight: 600;
+
+}
+
+.filaBotao{
+
+ height: 5%;
+ border-radius: 18px;
+ width: 86%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#decolar{
+background-image: linear-gradient(to right,rgb(48, 156, 228), rgb(95, 95, 184));
+color:white;
+margin-top: 8%;
+
+}
+#tinderGold{
+border: 1.5px solid rgb(174, 174, 174);
+margin-bottom: 5%;
+}
+#tinderGold h4{
+
+font-weight: 500;
+
+
+}
+
+.leftLine{
+
+ width: 45%;
+ height: 50%;
+border-bottom: 1px solid rgb(221, 221, 221);
+
+}
+
+.rightLine{
+
+
+    width: 45%;
+    height: 50%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+
+}
+#NO h4{
+
+font-weight: 500;
+
+}
+.ou{
+
+width: 86%;
+position: relative;
+display: flex;
+justify-content: space-between;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+.ou h4{
+
+display: inline-block;
+font-weight: 500;
+}
+
+
+#decolar h4{
+
+text-align: center;
+font-weight: 400;
+}
+
+.boltCircle{
+background-color: white;
+display: inline-block;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 15px;
+}
+.boltCircle .fa-bolt{
+
+font-size: 30px;
+color: blueviolet;
+}
+
 .plus{
 position: absolute;
 height: 100%;
@@ -545,12 +751,25 @@ font-size: 25px;
 .bolt{
 color: rgb(215, 77, 215);
 border: 1px solid rgb(215, 77, 215);
-padding-top: 2%;
+/* padding-top: 2%;
 padding-bottom: 2%;
 padding-left: 4%;
-padding-right: 4%;
+padding-right: 4%; */
+height: 40px;
+width: 40px;
 border-radius: 50%;
+position: relative;
 }
+.bolt .fa-bolt{
+
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+font-size: 20px;
+
+}
+
 .footer-container{
 height: 7%;
 width: 100%;
@@ -1289,6 +1508,17 @@ height: 30px;
 width: 30px;
 font-size: 50px;
 }
+
+#Xtwo{
+
+position: absolute;
+top:90%;
+left:50%;
+transform: translate(-50%,0%);
+font-size: 30px;
+}
+
+
 
 
 
