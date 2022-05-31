@@ -30,10 +30,17 @@ let boltButton = document.getElementById("boltButton")
 let bolt = document.getElementsByClassName("bolt")[0];
 let NO = document.getElementById("NO");
 let nope = document.getElementsByClassName("nope")[0];
+let nopeTag = document.getElementsByClassName("nopeTag")[0];
 
+nope.addEventListener("click", function(){
+
+nopeTag.style.display = "flex"
+
+})
 
 nope.addEventListener("mouseover", function(){
-  this.children[0].style.height = "40px"
+  this.children[0].style.height = "40px";
+ 
 })
 
 nope.addEventListener("mouseout", function () {

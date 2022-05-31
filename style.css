@@ -1,3 +1,5 @@
+/* You can search over files in VS Code using CTRL/SHIFT/F */
+
 *{
 margin: 0%;
 padding: 0%;
@@ -20,6 +22,46 @@ width: 360px;
 overflow: hidden;
 position: relative;
 }
+
+/* 
+
+NOPE TAG ===========================================================
+
+
+*/
+
+
+
+.nopeTag{
+transform: rotate(45deg);
+position: absolute;
+top: 20%;
+left: 55%;
+height: 60px;
+display: none;
+justify-content: center;
+align-items: center;
+width: 120px;
+z-index: 2;
+color: red;
+font-size: 1.3rem;
+border: 5px solid red;
+}
+.nopeTag h1{
+
+font-weight: 500;
+display: inline-block;
+
+}
+
+
+/* 
+
+END NOPE TAG ===========================================================
+
+
+*/
+
 .boltButton{
 
 position: absolute;
@@ -602,11 +644,15 @@ display: flex;
 align-items: flex-end;
 }
 .tags{
+
+
 width: 95%;
+
 height: 85%;
 display: flex;
 align-content: flex-start;
 flex-wrap: wrap;
+
 }
 .tags2{
 width: 95%;
@@ -665,8 +711,15 @@ border-radius: 20px;
 margin-right: 10px;
 margin-top: 8px;
 -webkit-text-stroke: 0.5px black;
-font-size: 20px;
+
+justify-content: center;
 }
+.tag h3{
+
+font-size: 130%!important;
+
+}
+
 .tag2 {
     background-color: rgba(61, 61, 61, 0.8);
     display:flex;
@@ -692,11 +745,18 @@ font-size: 20px;
 .tag h3{
 font-size: 1.3rem;
 }
+
+/* 
+
+     B U T T O N S  ====================================================
+
+*/
+
 .buttons{
 display: flex;
 align-items: center;
 justify-content: space-between;
-height: 60px;
+height: 10%;
 width: 90%;
 z-index: 1;
 }
@@ -750,8 +810,8 @@ box-sizing: border-box;
 }
 
 .star{
-color:rgb(39, 148, 237);
-border: 1px solid rgb(39, 148, 237);
+color:rgb(38, 201, 251);
+border: 1px solid rgb(38, 201, 251);
 height: 35px;
 width: 35px;
 border-radius: 50%;
@@ -804,6 +864,14 @@ transform: translate(-50%,-50%);
 font-size: 20px;
 
 }
+
+
+/* 
+
+  E N D   B U T T O N S  ====================================================
+
+*/
+
 
 .footer-container{
 height: 7%;
@@ -1552,6 +1620,122 @@ display: none;
 
 
 
+
+
+
+}
+@media(max-height:700px) {
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 15%;
+        width: 90%;
+        z-index: 1;
+    }
+
+
+        .information {
+            z-index: 1;
+            height: 45%;
+            /* height: 30%; */
+            /* height: 18%; */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .footer-container {
+                    height: 7%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background-color: white;
+                }
+        
+                .footer {
+                    height: 100%;
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: static;
+                }
+           .mainImage {
+               width: 97%;
+               margin: auto;
+               height: calc(87% + 8px);
+               background-size: cover;
+               border-radius: 7px;
+               display: flex;
+               justify-content: flex-end;
+               align-items: center;
+               flex-direction: column;
+               position: relative;
+           }
+       
+}
+
+@media (max-width: 360px) {
+
+.tag {
+        background-color: rgba(60, 60, 60, 0.8);
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-top: 8px;
+        -webkit-text-stroke: 0.5px black;
+
+        justify-content: center;
+    }
+
+    .tag h3 {
+
+        font-size: 110% !important;
+
+    }
+
+    .tag2 {
+        background-color: rgba(61, 61, 61, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-top: 8px;
+        -webkit-text-stroke: 0.5px black;
+        font-size: 20px;
+
+    }
+
+    .tag2 h4 {
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+
+        .name {
+            display: flex;
+            -webkit-text-stroke: 1.3px black;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .name-age {
+            display: flex;
+            align-items: flex-end;
+        }
+    
+        .name-age :first-child {
+            font-size: 200%;
+        }
+    
+        .name-age :nth-child(2) {
+            font-size: 35px;
+            margin-left: 12px;
+        }
 
 
 }
