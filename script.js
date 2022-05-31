@@ -33,6 +33,11 @@ let nope = document.getElementsByClassName("nope")[0];
 let nopeTag = document.getElementsByClassName("nopeTag")[0];
 let heart = document.getElementsByClassName("heart")[0];
 let curtiTag = document.getElementsByClassName("curtiTag")[0];
+let tagUm = document.getElementById("tagUm")
+let tagDois = document.getElementById("tagDois")
+let tagTres = document.getElementById("tagTres")
+let tagQuatro = document.getElementById("tagQuatro")
+let tagCinco = document.getElementById("tagCinco")
 
 
 
@@ -42,6 +47,21 @@ function changeGirl(){{
     tinderGirl.src = "./assets/tinderGirl2-1.webp"
     nopeTag.style.display = "none"
     curtiTag.style.display = "none"
+  
+
+   if(counter1 === 2){
+
+
+       tagUm.innerText = "Maquiagem"
+       tagDois.innerText = "Dança"
+       tagTres.innerText = "Arte"
+       tagQuatro.innerText = "Filmes"
+       tagCinco.innerText = "Marvel" 
+       information.style.height = "30%"
+
+   }
+
+    
 }}
 
 nope.addEventListener("click", function(){
@@ -242,15 +262,25 @@ tags.style.display = "flex"
 tags2.style.display = "none"
 tags3.style.display = "none"
 online.style.display = "flex"
+
+if(counter1 === 1){
+
 information.style.height = "40%"
-    }
+}
+}
+
 else if (counter2 ===2){
 
     tags.style.display = "none"
     tags2.style.display = "flex"
     tags3.style.display = "none"
     online.style.display = "none"
+    if(counter1 === 1){
     information.style.height = "30%"
+    }
+    else if (counter1 === 2) {
+        information.style.height = "30%"
+    }
 }
 else if (counter2 === 3) {
 
@@ -258,7 +288,9 @@ else if (counter2 === 3) {
     tags2.style.display = "none"
     tags3.style.display = "flex"
     online.style.display = "none"
+    
     information.style.height = "18%"
+  
 }
 
 
@@ -272,7 +304,11 @@ decrement();
         tags2.style.display = "none"
         tags3.style.display = "none"
         online.style.display = "flex"
-        information.style.height = "40%"
+        if (counter1 === 1) {
+        information.style.height = "40%"}
+        else if (counter2 === 1) {
+            information.style.height = "30%"
+        }
     }
     else if (counter2 === 2) {
 
@@ -280,7 +316,12 @@ decrement();
         tags2.style.display = "flex"
         tags3.style.display = "none"
         online.style.display = "none"
-        information.style.height = "30%"
+        if (counter1 === 1) {
+            information.style.height = "30%"
+        }
+        if(counter1 === 2){
+       information.style.height = "30%"
+       }
     }
     else if (counter2 === 3) {
 
@@ -288,7 +329,11 @@ decrement();
         tags2.style.display = "none"
         tags3.style.display = "flex"
         online.style.display = "none"
-        information.style.height = "18%"
+        if (counter1 === 1) {
+        information.style.height = "18%"}
+        else if(counter1 === 2){
+        information.style.height = "10%"
+        }
     }
 
 })
