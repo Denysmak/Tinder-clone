@@ -31,12 +31,46 @@ let bolt = document.getElementsByClassName("bolt")[0];
 let NO = document.getElementById("NO");
 let nope = document.getElementsByClassName("nope")[0];
 let nopeTag = document.getElementsByClassName("nopeTag")[0];
+let heart = document.getElementsByClassName("heart")[0];
+let curtiTag = document.getElementsByClassName("curtiTag")[0];
+
+
+
+function changeGirl(){{
+
+    counter1 = 2;
+    tinderGirl.src = "./assets/tinderGirl2-1.webp"
+    nopeTag.style.display = "none"
+    curtiTag.style.display = "none"
+}}
 
 nope.addEventListener("click", function(){
 
-nopeTag.style.display = "flex"
+if(counter1 === 1){
+nopeTag.style.display = "flex"    
+setTimeout(changeGirl,450)   
+}
+else{
 
+
+
+}
 })
+
+heart.addEventListener("click", function () {
+
+    if (counter1 === 1) {
+        curtiTag.style.display = "flex"
+        setTimeout(changeGirl, 450)
+    }
+    else {
+
+
+
+    }
+})
+
+
 
 nope.addEventListener("mouseover", function(){
   this.children[0].style.height = "40px";
@@ -181,36 +215,36 @@ e.style.backgroundColor = "white"
 
 
 
-
-var counter = 1;
+var counter1 = 1;
+var counter2 = 1;
 function increment() {
     
-    if(counter < 3){counter++;}
+    if(counter2 < 3){counter2++;}
     
 
-    else { counter = 3 }
+    else { counter2 = 3 }
 }
 function decrement(){
-if(counter > 1){counter--}
-else{counter = 1}
+if(counter2 > 1){counter2--}
+else{counter2 = 1}
 
 }
-console.log(counter)
+console.log(counter2)
 let right = document.getElementById("right");
 let left = document.getElementById("left");
 
 
 right.addEventListener("click", function(){
 increment()
-tinderGirl.src = `./assets/tinderGirl1-${counter}.webp`
-if (counter === 1) {
+    tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
+if (counter2 === 1) {
 tags.style.display = "flex"
 tags2.style.display = "none"
 tags3.style.display = "none"
 online.style.display = "flex"
 information.style.height = "40%"
     }
-else if (counter ===2){
+else if (counter2 ===2){
 
     tags.style.display = "none"
     tags2.style.display = "flex"
@@ -218,7 +252,7 @@ else if (counter ===2){
     online.style.display = "none"
     information.style.height = "30%"
 }
-else if (counter === 3) {
+else if (counter2 === 3) {
 
     tags.style.display = "none"
     tags2.style.display = "none"
@@ -232,15 +266,15 @@ else if (counter === 3) {
 })
 left.addEventListener("click", function(){
 decrement();
-    tinderGirl.src = `./assets/tinderGirl1-${counter}.webp`
-    if (counter === 1) {
+    tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
+    if (counter2 === 1) {
         tags.style.display = "flex"
         tags2.style.display = "none"
         tags3.style.display = "none"
         online.style.display = "flex"
         information.style.height = "40%"
     }
-    else if (counter === 2) {
+    else if (counter2 === 2) {
 
         tags.style.display = "none"
         tags2.style.display = "flex"
@@ -248,7 +282,7 @@ decrement();
         online.style.display = "none"
         information.style.height = "30%"
     }
-    else if (counter === 3) {
+    else if (counter2 === 3) {
 
         tags.style.display = "none"
         tags2.style.display = "none"

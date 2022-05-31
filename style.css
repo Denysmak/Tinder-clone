@@ -23,6 +23,22 @@ overflow: hidden;
 position: relative;
 }
 
+.curtiTag {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    z-index: 2;
+    color: rgb(90, 146, 6);
+    font-size: 1.3rem;
+    border: 5px solid rgb(90, 146, 6);
+}
+
 /* 
 
 NOPE TAG ===========================================================
