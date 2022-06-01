@@ -43,7 +43,9 @@ let tagOne = document.getElementById("tagOne");
 let tagTwo = document.getElementById("tagTwo");
 let tagthree = document.getElementById("tagThree");
 let tagFour = document.getElementById("tagFour");
-console.log(tagOne);
+
+console.log(tags3);
+console.log(tags3.children[0].children[1]);
 
 
 
@@ -68,7 +70,9 @@ function changeGirl(){{
        tags2.style.display = "none"
        tags3.style.display = "none"
        online.style.display = "flex"
-    //    tagOne.children[0].setAttribute("class", "fa-solid fa-paw")
+       tags3.children[0].children[1].innerText = "Mora no/em Fortaleza"
+       tags3.children[1].children[1].innerText = "630 km de distância"
+       tags3.children[0].style.width = "80%"
    }
 
     
