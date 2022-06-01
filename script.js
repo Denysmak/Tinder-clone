@@ -12,6 +12,7 @@ let tags = document.getElementById("tags");
 let tags2 = document.getElementById("tags2");
 let tags3 = document.getElementById("tags3");
 let tags4 = document.getElementById("tags4");
+let tags5 = document.getElementById("tags5")
 let online = document.getElementById("online");
 let information = document.getElementById("information");
 let dozemeses = document.getElementById("dozemeses");
@@ -44,50 +45,73 @@ let tagTwo = document.getElementById("tagTwo");
 let tagthree = document.getElementById("tagThree");
 let tagFour = document.getElementById("tagFour");
 
-console.log(tags3);
-console.log(tags3.children[0].children[1]);
 
+function changeToGirl2(){
+   counter1 = 2;
+   tinderGirl.src = "./assets/tinderGirl2-1.webp"
+   nopeTag.style.display = "none"
+   curtiTag.style.display = "none"
+   counter2 = 1;
+    tagUm.innerText = "Maquiagem"
+    tagDois.innerText = "Dança"
+    tagTres.innerText = "Arte"
+    tagQuatro.innerText = "Filmes"
+    tagCinco.innerText = "Marvel"
+    information.style.height = "30%"
+    tags.style.display = "flex"
+    tags2.style.display = "none"
+    tags3.style.display = "none"
+    online.style.display = "flex"
+    tags3.children[0].children[1].innerText = "Mora no/em Fortaleza"
+    tags3.children[1].children[1].innerText = "630 km de distância"
+    tags3.children[0].style.width = "80%"
 
+}
 
-function changeGirl(){{
-
-    counter1 = 2;
-    tinderGirl.src = "./assets/tinderGirl2-1.webp"
+function changeToGirl3(){
+    counter1 = 3;
+    tinderGirl.src = "./assets/tinderGirl3-1.webp"
     nopeTag.style.display = "none"
     curtiTag.style.display = "none"
     counter2 = 1;
 
-   if(counter1 === 2){
+ 
 
 
-       tagUm.innerText = "Maquiagem"
-       tagDois.innerText = "Dança"
-       tagTres.innerText = "Arte"
-       tagQuatro.innerText = "Filmes"
-       tagCinco.innerText = "Marvel" 
-       information.style.height = "30%"
-       tags.style.display = "flex"
-       tags2.style.display = "none"
-       tags3.style.display = "none"
-       online.style.display = "flex"
-       tags3.children[0].children[1].innerText = "Mora no/em Fortaleza"
-       tags3.children[1].children[1].innerText = "630 km de distância"
-       tags3.children[0].style.width = "80%"
-   }
+        tagUm.innerText = "Netflix"
+        tagDois.innerText = "Tatuagens"
+        tagTres.innerText = "Academia"
+        tagQuatro.innerText = "Vinho"
+        tagCinco.innerText = "Meditação"
+        information.style.height = "40%"
+        tags.style.display = "flex"
+        tags2.style.display = "none"
+        tags3.style.display = "none"
+        online.style.display = "flex"
+        tags3.children[0].children[1].innerText = "Mora no/em São Paulo"
+        tags3.children[1].children[1].innerText = "2130 km de distância"
+        tags3.children[0].style.width = "80%"
+ 
+        if(counter2 === 2){
 
-    
-}}
+      information.style.height = "20%"
+
+  }
+
+
+}
+
+
 
 nope.addEventListener("click", function(){
 
 if(counter1 === 1){
 nopeTag.style.display = "flex"    
-setTimeout(changeGirl,450)   
+setTimeout(changeToGirl2,450)  ; 
 }
-else{
-
-
-
+else if(counter1 ===2){
+nopeTag.style.display = "flex"    
+    setTimeout(changeToGirl3,450); 
 }
 })
 
@@ -95,12 +119,11 @@ heart.addEventListener("click", function () {
 
     if (counter1 === 1) {
         curtiTag.style.display = "flex"
-        setTimeout(changeGirl, 450)
+        setTimeout(changeToGirl2, 450)
     }
-    else {
-
-
-
+    else if(counter1 === 2){
+        curtiTag.style.display = "flex"
+        setTimeout(changeToGirl3, 450)
     }
 })
 
@@ -263,7 +286,7 @@ if(counter2 > 1){counter2--}
 else{counter2 = 1}
 
 }
-console.log(counter2)
+
 let right = document.getElementById("right");
 let left = document.getElementById("left");
 
@@ -271,22 +294,18 @@ let left = document.getElementById("left");
 right.addEventListener("click", function(){
 increment()
     tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
+
 if (counter2 === 1) {
-tags.style.display = "flex"
-tags2.style.display = "none"
-tags3.style.display = "none"
-online.style.display = "flex"
+ tags.style.display = "flex"
+ tags2.style.display = "none"
+ tags3.style.display = "none"
+ online.style.display = "flex"
 
 if(counter1 === 1){
 
 information.style.height = "40%"
 }
-    if (counter2 === 1) {
 
-        information.style.height = "40%"
-        tags2.style.display = "none"
-        tags4.style.display = "none"
-    }
 }
 
 else if (counter2 ===2){
@@ -304,6 +323,12 @@ else if (counter2 ===2){
         
         tags4.style.display = "flex"
     }
+    else if (counter1 === 3) {
+        information.style.height = "30%"
+        tags2.style.display = "none"
+        tags4.style.display = "none"
+        tags5.style.display = "flex"
+    }
 }
 else if (counter2 === 3) {
 
@@ -312,6 +337,7 @@ else if (counter2 === 3) {
     tags3.style.display = "flex"
     online.style.display = "none"
     tags4.style.display = "none"
+    tags5.style.display = "none"
     information.style.height = "18%"
   
 }
@@ -327,13 +353,20 @@ decrement();
         tags2.style.display = "none"
         tags3.style.display = "none"
         online.style.display = "flex"
+        tags4.style.display = "none"
         if (counter1 === 1) {
         information.style.height = "40%"}
-        else if (counter2 === 1) {
-            information.style.height = "30%"
+        // else if (counter2 === 1) {
+        //     information.style.height = "30%"
+        //     tags4.style.display = "none"
+        // }
+        else if (counter1 === 3) {
+            information.style.height = "40%"
             tags4.style.display = "none"
-            
+            console.log("teste")
+            tags5.style.display = "none"
         }
+     
     }
     else if (counter2 === 2) {
 
@@ -344,12 +377,17 @@ decrement();
         if (counter1 === 1) {
             information.style.height = "30%"
         }
-        if(counter1 === 2){
+       else if(counter1 === 2){
        information.style.height = "30%"
             tags2.style.display = "none"
-            tags4.style.display = "flex"
-           
+            tags4.style.display = "flex" 
        }
+        else if (counter1 === 3) {
+            information.style.height = "30%"
+            tags2.style.display = "none"
+            tags4.style.display = "none"
+            tags5.style.display = "flex"
+        }
     }
     else if (counter2 === 3) {
 
@@ -361,7 +399,10 @@ decrement();
         information.style.height = "18%"}
         else if(counter1 === 2){
         information.style.height = "10%"
-            
+        }
+        else if (counter1 === 3) {
+            information.style.height = "10%"
+            tags5.style.display = "none"
         }
     }
 
