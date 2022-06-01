@@ -11,6 +11,7 @@ let tinderGirl = document.getElementById("tinderGirl");
 let tags = document.getElementById("tags");
 let tags2 = document.getElementById("tags2");
 let tags3 = document.getElementById("tags3");
+let tags4 = document.getElementById("tags4");
 let online = document.getElementById("online");
 let information = document.getElementById("information");
 let dozemeses = document.getElementById("dozemeses");
@@ -38,6 +39,11 @@ let tagDois = document.getElementById("tagDois")
 let tagTres = document.getElementById("tagTres")
 let tagQuatro = document.getElementById("tagQuatro")
 let tagCinco = document.getElementById("tagCinco")
+let tagOne = document.getElementById("tagOne");
+let tagTwo = document.getElementById("tagTwo");
+let tagthree = document.getElementById("tagThree");
+let tagFour = document.getElementById("tagFour");
+console.log(tagOne);
 
 
 
@@ -47,7 +53,7 @@ function changeGirl(){{
     tinderGirl.src = "./assets/tinderGirl2-1.webp"
     nopeTag.style.display = "none"
     curtiTag.style.display = "none"
-  
+    counter2 = 1;
 
    if(counter1 === 2){
 
@@ -58,7 +64,11 @@ function changeGirl(){{
        tagQuatro.innerText = "Filmes"
        tagCinco.innerText = "Marvel" 
        information.style.height = "30%"
-
+       tags.style.display = "flex"
+       tags2.style.display = "none"
+       tags3.style.display = "none"
+       online.style.display = "flex"
+    //    tagOne.children[0].setAttribute("class", "fa-solid fa-paw")
    }
 
     
@@ -267,6 +277,12 @@ if(counter1 === 1){
 
 information.style.height = "40%"
 }
+    if (counter2 === 1) {
+
+        information.style.height = "40%"
+        tags2.style.display = "none"
+        tags4.style.display = "none"
+    }
 }
 
 else if (counter2 ===2){
@@ -280,6 +296,9 @@ else if (counter2 ===2){
     }
     else if (counter1 === 2) {
         information.style.height = "30%"
+        tags2.style.display = "none"
+        
+        tags4.style.display = "flex"
     }
 }
 else if (counter2 === 3) {
@@ -288,7 +307,7 @@ else if (counter2 === 3) {
     tags2.style.display = "none"
     tags3.style.display = "flex"
     online.style.display = "none"
-    
+    tags4.style.display = "none"
     information.style.height = "18%"
   
 }
@@ -308,6 +327,8 @@ decrement();
         information.style.height = "40%"}
         else if (counter2 === 1) {
             information.style.height = "30%"
+            tags4.style.display = "none"
+            
         }
     }
     else if (counter2 === 2) {
@@ -321,6 +342,9 @@ decrement();
         }
         if(counter1 === 2){
        information.style.height = "30%"
+            tags2.style.display = "none"
+            tags4.style.display = "flex"
+           
        }
     }
     else if (counter2 === 3) {
@@ -333,6 +357,7 @@ decrement();
         information.style.height = "18%"}
         else if(counter1 === 2){
         information.style.height = "10%"
+            
         }
     }
 
