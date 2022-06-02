@@ -44,6 +44,14 @@ let tagOne = document.getElementById("tagOne");
 let tagTwo = document.getElementById("tagTwo");
 let tagthree = document.getElementById("tagThree");
 let tagFour = document.getElementById("tagFour");
+let imagemPrincipal = document.querySelector(".imagemPrincipal")
+let text = document.querySelector(".text");
+let star = document.querySelector(".star");
+
+
+
+
+
 
 
 function changeToGirl2(){
@@ -74,31 +82,41 @@ function changeToGirl3(){
     nopeTag.style.display = "none"
     curtiTag.style.display = "none"
     counter2 = 1;
+    tagUm.innerText = "Netflix"
+    tagDois.innerText = "Tatuagens"
+    tagTres.innerText = "Academia"
+    tagQuatro.innerText = "Vinho"
+    tagCinco.innerText = "Meditação"
+    information.style.height = "40%"
+    tags.style.display = "flex"
+    tags2.style.display = "none"
+    tags3.style.display = "none"
+    online.style.display = "flex"
+    tags3.children[0].children[1].innerText = "Mora no/em São Paulo"
+    tags3.children[1].children[1].innerText = "2130 km de distância"
+    tags3.children[0].style.width = "80%";
+    tags4.style.display = "none"
+}
 
- 
-
-
-        tagUm.innerText = "Netflix"
-        tagDois.innerText = "Tatuagens"
-        tagTres.innerText = "Academia"
-        tagQuatro.innerText = "Vinho"
-        tagCinco.innerText = "Meditação"
-        information.style.height = "40%"
-        tags.style.display = "flex"
-        tags2.style.display = "none"
-        tags3.style.display = "none"
-        online.style.display = "flex"
-        tags3.children[0].children[1].innerText = "Mora no/em São Paulo"
-        tags3.children[1].children[1].innerText = "2130 km de distância"
-        tags3.children[0].style.width = "80%"
- 
-        if(counter2 === 2){
-
-      information.style.height = "20%"
-
-  }
-
-
+function changeToNobody(){
+counter1 = 4;
+ imagemPrincipal.style.display = "none";
+ text.style.display = "none"
+ nopeTag.style.display = "none"
+ curtiTag.style.display = "none"
+ arrow.style.backgroundColor = "white";
+ arrow.style.color = "orange";
+ nope.style.backgroundColor = "white";
+ nope.children[0].style.color = "rgb(157, 157, 157)";
+ nope.style.border = "none";
+ star.style.backgroundColor = "white";
+ star.style.color = "rgb(157, 157, 157)";
+ star.style.border = "none";
+ heart.style.backgroundColor = "white";
+ heart.style.color = "rgb(157, 157, 157)";
+ heart.style.border = "none";
+ bolt.style.border = "none";
+ bolt.style.backgroundColor = "white";
 }
 
 
@@ -113,6 +131,13 @@ else if(counter1 ===2){
 nopeTag.style.display = "flex"    
     setTimeout(changeToGirl3,450); 
 }
+else if (counter1 === 3) {
+    nopeTag.style.display = "flex"
+    setTimeout(changeToNobody, 450)
+}
+else if (counter1 === 4) {
+    nopeTag.style.display = "none"
+}
 })
 
 heart.addEventListener("click", function () {
@@ -124,6 +149,13 @@ heart.addEventListener("click", function () {
     else if(counter1 === 2){
         curtiTag.style.display = "flex"
         setTimeout(changeToGirl3, 450)
+    }
+    else if (counter1 === 3) {
+        curtiTag.style.display = "flex"
+        setTimeout(changeToNobody, 450)
+    }
+    else if (counter1 === 4) {
+        nopeTag.style.display = "none"
     }
 })
 
@@ -300,6 +332,7 @@ if (counter2 === 1) {
  tags2.style.display = "none"
  tags3.style.display = "none"
  online.style.display = "flex"
+
 
 if(counter1 === 1){
 

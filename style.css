@@ -39,6 +39,8 @@ position: relative;
     border: 5px solid rgb(90, 146, 6);
 }
 
+
+
 /* 
 
 NOPE TAG ===========================================================
@@ -299,6 +301,7 @@ position: absolute;
 left: 0.5%;
 top:0.5%;
 z-index: 6;
+
 }
 .fa-xmark:hover{
 
@@ -819,6 +822,29 @@ align-items: center;
 box-sizing: border-box;
 }
 
+.Ninguem{
+height: 40%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.ninguemImage{
+height: 120px;
+width: 120px;
+border-radius: 50%;
+background-size: cover;
+background-position-y: center;
+background-image: url(./assets/perfil.webp);
+}
+.Ninguem small{
+
+color: red;
+font-weight: 600;
+-webkit-text-stroke: 0.7px black;
+color: white;
+margin-top: 10%;
+}
 
 
 .nope .fa-xmark{
