@@ -76,7 +76,11 @@ this.parentElement.parentElement.style.display = "none"
 
 
 star.addEventListener("click", function(){
-boltButton2.style.display = "flex"
+    
+    if (counter1 === 4) { boltButton2.style.display = "none"}   
+else{
+    boltButton2.style.display = "flex"}
+
 })
 NO2.addEventListener("click", function () {
     boltButton2.style.display = "none"
