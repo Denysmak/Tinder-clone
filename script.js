@@ -24,9 +24,15 @@ let X = document.getElementById("X");
 let one = document.getElementById("one");
 let five = document.getElementById("five");
 let ten = document.getElementById("ten");
+let oneTwo = document.getElementById("one2");
+let fiveTwo = document.getElementById("five2");
+let tenTwo = document.getElementById("ten2");
 let price1 = document.getElementById("price1")
 let price2 = document.getElementById("price2");
 let price3 = document.getElementById("price3");
+let price12= document.getElementById("price1-2")
+let price22 = document.getElementById("price2-2");
+let price32 = document.getElementById("price3-2");
 let Xtwo = document.getElementById("Xtwo");
 let boltButton = document.getElementById("boltButton")
 let bolt = document.getElementsByClassName("bolt")[0];
@@ -47,10 +53,34 @@ let tagFour = document.getElementById("tagFour");
 let imagemPrincipal = document.querySelector(".imagemPrincipal")
 let text = document.querySelector(".text");
 let star = document.querySelector(".star");
+let Xthree = document.getElementById("Xthree");
+let boltButton2 = document.getElementById("boltButton2")
+let NO2 = document.getElementById("NO2");
+let economizeFive2 = document.getElementById("economizefive2");
+let five2 = document.getElementById("five2")
 
 
 
 
+
+console.log(economizeFive2)
+
+console.log(Xthree.parentElement)
+
+Xthree.addEventListener("click", function(){
+
+this.parentElement.parentElement.style.display = "none"
+
+})
+
+
+
+star.addEventListener("click", function(){
+boltButton2.style.display = "flex"
+})
+NO2.addEventListener("click", function () {
+    boltButton2.style.display = "none"
+})
 
 
 
@@ -174,10 +204,13 @@ nope.addEventListener("mouseout", function () {
 
 
 bolt.addEventListener("mouseover", function(){
-this.children[0].style.fontSize = "30px"
+this.children[0].style.fontSize = "30px";
+this.style.border = "1px solid rgb(215, 77, 215)"
+
 })
 bolt.addEventListener("mouseout", function () {
     this.children[0].style.fontSize = "20px"
+    this.style.border = "none"
 })
 
 bolt.addEventListener("click", function(){
@@ -223,6 +256,25 @@ function blueClickOne(e){
     price2.children[1].style.color = "black";
 }
 
+function blueClickOneTwo(e) {
+    price12.style.height = "34%";
+    price12.style.backgroundColor = "rgb(95, 95, 184)"
+    e.children[0].children[0].style.color = "rgb(53, 190, 53)";
+    e.style.borderLeft = "0.5px solid black";
+    e.style.borderRight = "0.5px solid black";
+    fiveTwo.style.border = "none";
+    tenTwo.style.border = "none";
+    price22.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+    price22.style.backgroundColor = "white"
+    price32.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+    price32.style.backgroundColor = "white";
+    price22.style.height = "34%";
+    price32.style.height = "34%";
+    price32.children[1].style.color = "black"
+    price22.children[1].style.color = "black";
+}
+
+
 
 function blueClickTwo(e){
   e.style.borderLeft = "0.5px solid black";
@@ -242,6 +294,26 @@ function blueClickTwo(e){
   price3.children[1].style.color = "black"
 }
 
+
+function blueClickTwoTwo(e) {
+    e.style.borderLeft = "0.5px solid black";
+    e.style.borderRight = "0.5px solid black";
+    oneTwo.style.border = "none";
+    tenTwo.style.border = "none";
+    oneTwo.children[0].style.backgroundColor = "white";
+    oneTwo.children[0].style.height = "11.5%";
+    oneTwo.children[0].children[0].style.color = "black";
+    price22.style.height = "55%";
+    price32.style.height = "34%";
+    price22.style.backgroundColor = "rgb(95, 95, 184)";
+    price22.children[0].style.backgroundColor = "rgb(95, 95, 184)"
+    price32.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+    price32.style.backgroundColor = "white";
+    price22.children[1].style.color = "rgb(53, 190, 53)"
+    price32.children[1].style.color = "black"
+}
+
+
 function blueClickThree(e) {
     e.style.borderLeft = "0.5px solid black";
     e.style.borderRight = "0.5px solid black";
@@ -258,6 +330,26 @@ function blueClickThree(e) {
     price3.children[0].style.backgroundColor = "rgb(95, 95, 184)";
     price3.children[1].style.color = "rgb(53, 190, 53)";
     price2.children[1].style.color = "black";
+}
+function blueClickThreeTwo(e) {
+    e.style.borderLeft = "0.5px solid black";
+    e.style.borderRight = "0.5px solid black";
+    oneTwo.style.border = "none";
+    // fiveTwo.style.border = "none";
+    economizeFive2.style.backgroundColor = "rgb(141, 192, 192)"
+    five2.style.border = "none"
+    oneTwo.children[0].style.backgroundColor = "white";
+    oneTwo.children[0].style.height = "11.5%";
+    oneTwo.children[0].children[0].style.color = "black";
+    price2.children[0].style.backgroundColor = "rgb(141, 192, 192)";
+    price32.style.height = "55%";
+    price22.style.height = "34%";
+    price22.style.backgroundColor = "white";
+    price32.style.backgroundColor = "rgb(95, 95, 184)";
+    price32.children[0].style.backgroundColor = "rgb(95, 95, 184)";
+    price32.children[1].style.color = "rgb(53, 190, 53)";
+    price22.children[1].style.color = "black";
+   
 }
 
 

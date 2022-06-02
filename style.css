@@ -89,6 +89,27 @@ background-color: white;
 z-index: 3;
 display: none;
 }
+.boltButton2 {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    display:none;
+    flex-direction: column;
+}
+.boltBlue{
+
+    height: 12%;
+    width: 100%;
+    background-image: linear-gradient(rgb(37, 92, 230), rgb(77, 194, 215));
+
+}
+.boltWhite2 {
+    background-image: linear-gradient(rgb(77, 194, 215), white);
+    height: 8%;
+}
 .boltPurple{
 
 height: 12%;
@@ -99,9 +120,10 @@ background-image: linear-gradient(rgb(215, 77, 215), white);
 height: 8%;
 }
 #price1{
-
 border-top: 0.5px solid rgb(164, 164, 164)
-
+}
+#price1-2{
+    border-top: 0.5px solid rgb(164, 164, 164)
 }
 .boltText{
 position: absolute;
@@ -139,6 +161,13 @@ display: flex;
 font-weight: 400;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+#five2{
+
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+
+
+}
 .oneboost{
 display: flex;
 flex-direction: column-reverse;
@@ -160,11 +189,20 @@ text-align: center;
     background-color: rgb(95, 95, 184);
 
 }
-#price2{
+#economizefive2 {
 
+    background-color: rgb(95, 95, 184);
+
+}
+#price2{
 background-color: rgb(95, 95, 184);
 height: 55%;
 }
+#price2-2{
+    background-color: rgb(95, 95, 184);
+    height: 55%;
+}
+
 .price .percentage{
 font-weight: 600;
 }
