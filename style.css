@@ -653,6 +653,7 @@ font-size: 39px;
 .name-age :nth-child(2){
 font-size: 35px;
 margin-left: 12px;
+font-weight: 400;
 }
 .textContainer{
 width: 100%;

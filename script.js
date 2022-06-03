@@ -57,15 +57,17 @@ let Xthree = document.getElementById("Xthree");
 let boltButton2 = document.getElementById("boltButton2")
 let NO2 = document.getElementById("NO2");
 let economizeFive2 = document.getElementById("economizefive2");
-let five2 = document.getElementById("five2")
+let five2 = document.getElementById("five2");
+let tinderGirlName = document.getElementById("tinderGirlName")
+let tinderGirlAge = document.getElementById("tinderGirlAge")
+
+console.log(tinderGirlAge)
 
 
 
 
 
-console.log(economizeFive2)
 
-console.log(Xthree.parentElement)
 
 Xthree.addEventListener("click", function(){
 
@@ -107,6 +109,8 @@ function changeToGirl2(){
     tags3.children[0].children[1].innerText = "Mora no/em Fortaleza"
     tags3.children[1].children[1].innerText = "630 km de distância"
     tags3.children[0].style.width = "80%"
+    tinderGirlName.innerText = "Alice"
+    tinderGirlAge.innerText = "24"
 
 }
 
@@ -130,6 +134,8 @@ function changeToGirl3(){
     tags3.children[1].children[1].innerText = "2130 km de distância"
     tags3.children[0].style.width = "80%";
     tags4.style.display = "none"
+    tinderGirlName.innerText = "Sophia"
+    tinderGirlAge.innerText = "25"
 }
 
 function changeToNobody(){
