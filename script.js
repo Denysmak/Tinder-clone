@@ -61,7 +61,7 @@ let five2 = document.getElementById("five2");
 let tinderGirlName = document.getElementById("tinderGirlName")
 let tinderGirlAge = document.getElementById("tinderGirlAge")
 
-console.log(tinderGirlAge)
+
 
 
 
@@ -421,15 +421,27 @@ else{counter2 = 1}
 
 }
 
+let img2 = document.createElement("img");
+img2.src = "./assets/tinderGirl1-2.webp"
+
+img2.onload = console.log("teste")
+
 let right = document.getElementById("right");
 let left = document.getElementById("left");
 
 
 right.addEventListener("click", function(){
 increment()
-    tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
 
+
+    
+  
+
+
+   tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
+   
 if (counter2 === 1) {
+
  tags.style.display = "flex"
  tags2.style.display = "none"
  tags3.style.display = "none"
@@ -464,6 +476,7 @@ else if (counter2 ===2){
         tags4.style.display = "none"
         tags5.style.display = "flex"
     }
+
 }
 else if (counter2 === 3) {
 

@@ -14,7 +14,7 @@ align-items: center;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 color: white;
-background-color: black;
+background-color:rgb(179, 179, 179);
 }
 main{
 height: 720px;
