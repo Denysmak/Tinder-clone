@@ -8,6 +8,14 @@ let lupa = document.getElementById("lupa");
 let diamond = document.getElementById("diamond");
 let chat = document.getElementById("chat")
 let tinderGirl = document.getElementById("tinderGirl");
+let tinderGirl2 = document.getElementById("tinderGirl2");
+let tinderGirl3 = document.getElementById("tinderGirl3")
+let tinderGirl4 = document.getElementById("tinderGirl4");
+let tinderGirl5 = document.getElementById("tinderGirl5");
+let tinderGirl6 = document.getElementById("tinderGirl6")
+let tinderGirl7 = document.getElementById("tinderGirl7");
+let tinderGirl8 = document.getElementById("tinderGirl8");
+let tinderGirl9 = document.getElementById("tinderGirl9")
 let tags = document.getElementById("tags");
 let tags2 = document.getElementById("tags2");
 let tags3 = document.getElementById("tags3");
@@ -60,8 +68,7 @@ let economizeFive2 = document.getElementById("economizefive2");
 let five2 = document.getElementById("five2");
 let tinderGirlName = document.getElementById("tinderGirlName")
 let tinderGirlAge = document.getElementById("tinderGirlAge")
-
-
+let ninguem = document.querySelector(".Ninguem");
 
 
 
@@ -92,7 +99,10 @@ NO2.addEventListener("click", function () {
 
 function changeToGirl2(){
    counter1 = 2;
-   tinderGirl.src = "./assets/tinderGirl2-1.webp"
+   tinderGirl.style.display = "none"
+   tinderGirl2.style.display = "none"
+   tinderGirl3.style.display = "none"
+   tinderGirl4.style.display = "flex"
    nopeTag.style.display = "none"
    curtiTag.style.display = "none"
    counter2 = 1;
@@ -116,7 +126,14 @@ function changeToGirl2(){
 
 function changeToGirl3(){
     counter1 = 3;
-    tinderGirl.src = "./assets/tinderGirl3-1.webp"
+    // tinderGirl.src = "./assets/tinderGirl3-1.webp"
+    tinderGirl.style.display = "none"
+    tinderGirl2.style.display = "none"
+    tinderGirl3.style.display = "none"
+    tinderGirl4.style.display = "none"
+    tinderGirl5.style.display = "none"
+    tinderGirl6.style.display = "none"
+    tinderGirl7.style.display = "flex"
     nopeTag.style.display = "none"
     curtiTag.style.display = "none"
     counter2 = 1;
@@ -140,6 +157,16 @@ function changeToGirl3(){
 
 function changeToNobody(){
 counter1 = 4;
+ tinderGirl.style.display = "none"
+ tinderGirl2.style.display = "none"
+ tinderGirl3.style.display = "none"
+ tinderGirl4.style.display = "none"
+ tinderGirl5.style.display = "none"
+ tinderGirl6.style.display = "none"
+ tinderGirl7.style.display = "none"
+ tinderGirl8.style.display = "none"
+ tinderGirl9.style.display = "none"
+ ninguem.style.display = "flex"
  imagemPrincipal.style.display = "none";
  text.style.display = "none"
  nopeTag.style.display = "none"
@@ -184,7 +211,7 @@ heart.addEventListener("click", function () {
 
     if (counter1 === 1) {
         curtiTag.style.display = "flex"
-        setTimeout(changeToGirl2, 450)
+        setTimeout(changeToGirl2, 450);
     }
     else if(counter1 === 2){
         curtiTag.style.display = "flex"
@@ -421,10 +448,9 @@ else{counter2 = 1}
 
 }
 
-let img2 = document.createElement("img");
-img2.src = "./assets/tinderGirl1-2.webp"
 
-img2.onload = console.log("teste")
+
+
 
 let right = document.getElementById("right");
 let left = document.getElementById("left");
@@ -434,11 +460,48 @@ right.addEventListener("click", function(){
 increment()
 
 
-    
+if(counter1 === 1){
+  
+if(counter2 === 2){    
+tinderGirl.style.display = "none"
+tinderGirl2.style.display = "flex"
+}
+else if(counter2 === 3){
+
+tinderGirl2.style.display = "none"
+tinderGirl3.style.display = "flex"
+}
+}    
+if(counter1 === 2){
+
+ if(counter2 === 2){
+     tinderGirl4.style.display = "none"
+     tinderGirl5.style.display = "flex"
+ }
+ if (counter2 === 3) {
+      tinderGirl5.style.display = "none"
+      tinderGirl6.style.display = "flex"
+    }
+
+
+}
+    if (counter1 === 3) {
+
+        if (counter2 === 2) {
+            tinderGirl7.style.display = "none"
+            tinderGirl8.style.display = "flex"
+        }
+        if (counter2 === 3) {
+            tinderGirl8.style.display = "none"
+            tinderGirl9.style.display = "flex"
+        }
+
+
+    }
   
 
 
-   tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
+   
    
 if (counter2 === 1) {
 
@@ -446,13 +509,14 @@ if (counter2 === 1) {
  tags2.style.display = "none"
  tags3.style.display = "none"
  online.style.display = "flex"
-
+console.log("teste")
 
 if(counter1 === 1){
 
 information.style.height = "40%"
+    console.log("teste")
 }
-
+ 
 }
 
 else if (counter2 ===2){
@@ -495,7 +559,39 @@ else if (counter2 === 3) {
 })
 left.addEventListener("click", function(){
 decrement();
-    tinderGirl.src = `./assets/tinderGirl${counter1}-${counter2}.webp`
+
+   if(counter1 === 1){
+  if(counter2 === 2){
+  tinderGirl3.style.display = "none"
+  tinderGirl2.style.display = "flex"
+  }
+  if(counter2 === 1){
+    tinderGirl2.style.display = "none"
+    tinderGirl.style.display = "flex"
+  }
+   }
+
+    if (counter1 === 2) {
+        if (counter2 === 2) {
+            tinderGirl6.style.display = "none"
+            tinderGirl5.style.display = "flex"
+        }
+        if (counter2 === 1) {
+            tinderGirl5.style.display = "none"
+            tinderGirl4.style.display = "flex"
+        }
+    }
+    if (counter1 === 3) {
+        if (counter2 === 2) {
+            tinderGirl9.style.display = "none"
+            tinderGirl8.style.display = "flex"
+        }
+        if (counter2 === 1) {
+            tinderGirl8.style.display = "none"
+            tinderGirl7.style.display = "flex"
+        }
+    }
+
     if (counter2 === 1) {
         tags.style.display = "flex"
         tags2.style.display = "none"
@@ -503,7 +599,8 @@ decrement();
         online.style.display = "flex"
         tags4.style.display = "none"
         if (counter1 === 1) {
-        information.style.height = "40%"}
+        information.style.height = "40%" 
+    }
         // else if (counter2 === 1) {
         //     information.style.height = "30%"
         //     tags4.style.display = "none"
@@ -544,7 +641,9 @@ decrement();
         tags3.style.display = "flex"
         online.style.display = "none"
         if (counter1 === 1) {
-        information.style.height = "18%"}
+        information.style.height = "18%"
+    
+    }
         else if(counter1 === 2){
         information.style.height = "10%"
         }

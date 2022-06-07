@@ -620,6 +620,47 @@ display: flex;
 height: 100%;
 width: 120%;
 }
+#tinderGirl2 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl3 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl4 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl5 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl6 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl7 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl8 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+#tinderGirl9 {
+    height: 100%;
+    width: 120%;
+    display: none;
+}
+
 #left{
 flex-grow: 1;
 
@@ -864,7 +905,7 @@ box-sizing: border-box;
 .Ninguem{
 height: 40%;
 width: 100%;
-display: flex;
+display: none;
 flex-direction: column;
 align-items: center;
 }
